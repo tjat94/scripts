@@ -1,6 +1,10 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import ssl
 
+'''
+https server with port 8002
+'''
+
 httpd = HTTPServer(('0.0.0.0', 8002), BaseHTTPRequestHandler)
 
 # Create SSL context

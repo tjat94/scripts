@@ -1,7 +1,9 @@
 from http.server import SimpleHTTPRequestHandler, HTTPServer
 from urllib.parse import unquote
 from pathlib import Path
-
+'''
+8088server saves post data to local file
+'''
 DIR = Path("~/Documents/Tryhackme/Web Pentest").expanduser()
 
 class CustomRequestHandler(SimpleHTTPRequestHandler):
@@ -33,5 +35,5 @@ class CustomRequestHandler(SimpleHTTPRequestHandler):
 if __name__ == '__main__':
     server_address = ('', 8080)
     httpd = HTTPServer(server_address, CustomRequestHandler)
-    print('Server running on http://localhost:8080/')
+    print('Server running on http://localhost:8088/')
     httpd.serve_forever()

@@ -1,6 +1,10 @@
 import sys
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
+'''
+Use to respond 101 code, run on any port (8080)
+'''
+
 if len(sys.argv)-1 != 1:
     print("""
 Usage: {} 
